@@ -23,10 +23,10 @@ class Peminjaman extends Model
     public function user(): BelongsTo {
         return $this->belongsTo(User::class);
     }
-    public function detailPinjam(); HasMany {
+    public function detailPinjam(): HasMany {
         return $this->hasMany(DetailPinjam::class);
     }
-    public function pengembalian(); HasOne {
+    public function pengembalian(): HasOne {
         return $this->hasOne(Pengembalian::class);
     }
 }

@@ -21,7 +21,7 @@ class Alat extends Model
     public function kategori(): BelongsTo {
         return $this->belongsTo(Kategori::class);
     }
-    public function detailPinjam(): HasMany(
+    public function detailPinjam(): HasMany{
         return $this->hasMany(DetailPinjam::class);
-    )
+    }
 }
